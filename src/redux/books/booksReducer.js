@@ -14,7 +14,7 @@ const booksReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         loading: false,
-        books: [...state.books.state, action.payload],
+        books: [...state.books, action.payload],
       };
     case BookActionTypes.FETCH_BOOKS_ERROR:
       return { ...state, loading: false, error: action.payload };

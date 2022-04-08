@@ -18,7 +18,7 @@ const categoriesReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         categories: state.categories.filter(
-          (category) => category.item_id !== action.payload
+          (category) => category.item_id !== action.payload,
         ),
       };
     default:
